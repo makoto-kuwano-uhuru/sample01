@@ -29,8 +29,8 @@ jobs:
     #- name: Run with Gradle
     #  run: ./gradlew bootrun &
     - name: ZAP Full Scan
-      uses: zaproxy/action-full-scan@v0.2.0
+      uses: zaproxy/action-api-scan@v0.2.0
       with:
         docker_name: 'owasp/zap2docker-stable'
-        target: 'https://www.google.com/?hl=ja'
+        target: 'api.nonfunctionaltest.can4l.com/ngsi-ld/v1'
         cmd_options: '-d'
