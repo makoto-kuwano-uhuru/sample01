@@ -32,5 +32,5 @@ jobs:
       uses: zaproxy/action-api-scan@v0.1.1
       with:
         docker_name: 'owasp/zap2docker-stable'
-        target: 'api.nonfunctionaltest.can4l.com/ngsi-ld/v1'
+        target: 'https://api.nonfunctionaltest.can4l.com/ngsi-ld/v1'
         cmd_options: '-d'
