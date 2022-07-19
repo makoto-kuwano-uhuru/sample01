@@ -36,23 +36,26 @@ jobs:
         cmd_options: '-z "-config api.key=eyJhbGciOiJSUzI1NiIsInR5cCI6IkpXVCJ9.eyJjYW5hbCI6eyJ0ZW5hbnQiOiJBVVRIX0lORk9fVEVOQU5UIiwidXNlciI6IkFVVEhJTkZPX1JFQURfT05MWV9VU0VSIn0sImlhdCI6MTY1Nzc2MTcxMn0.Pvg8NCC_ica4q23c9W2yAus2UfuUJqTEfR6_hZb5uRdIf5-OhdDyHZTpVn1CGcIbqUAM1YQ2ovQxtKVwC5f3eW6Y2xzJqRUnGOAVfowv66g9PfARgxSJV-oriZcbfYRrknUap81gP-jO2BHeT3UIHvmHqGcLEXFFEx86HJgRJF-TVJJgKTE6yc1HtSVHu5knM1fvt0iNAHmLGcLLhZ8pJeuZ2DdE_etJYLArJheHW7Y_jKY-j5xaeP7vvXMeTlk7Aw19yunPudY-PTLU0-h4xgjniAFN5E1QOlVPht9MUgg6q5IwrJwT3tS8HgTPZiM8uLk7jv0qLTs6ed3uKZy_Ww"'
          
 
-#    - name: ZAP Full Scan1
+    - name: ZAP Full Scan1
 #      uses: zaproxy/action-full-scan@v0.4.0
-#      with:
-#        docker_name: 'owasp/zap2docker-stable'
-#        target: 'https://api.nonfunctionaltest.can4l.com/ngsi-ld/v1/entityOperations/create'
-#        cmd_options: '-z "-config api.key=eyJhbGciOiJSUzI1NiIsInR5cCI6IkpXVCJ9.eyJjYW5hbCI6eyJ0ZW5hbnQiOiJBVVRIX0lORk9fVEVOQU5UIiwidXNlciI6IkFVVEhJTkZPX1JFQURfT05MWV9VU0VSIn0sImlhdCI6MTY1Nzc2MTcxMn0.Pvg8NCC_ica4q23c9W2yAus2UfuUJqTEfR6_hZb5uRdIf5-OhdDyHZTpVn1CGcIbqUAM1YQ2ovQxtKVwC5f3eW6Y2xzJqRUnGOAVfowv66g9PfARgxSJV-oriZcbfYRrknUap81gP-jO2BHeT3UIHvmHqGcLEXFFEx86HJgRJF-TVJJgKTE6yc1HtSVHu5knM1fvt0iNAHmLGcLLhZ8pJeuZ2DdE_etJYLArJheHW7Y_jKY-j5xaeP7vvXMeTlk7Aw19yunPudY-PTLU0-h4xgjniAFN5E1QOlVPht9MUgg6q5IwrJwT3tS8HgTPZiM8uLk7jv0qLTs6ed3uKZy_Ww"'
+      uses: zaproxy/action-api-scan@v0.1.1
+      with:
+        docker_name: 'owasp/zap2docker-stable'
+        target: 'https://api.nonfunctionaltest.can4l.com/ngsi-ld/v1/entityOperations/create'
+        cmd_options: '-z "-config api.key=eyJhbGciOiJSUzI1NiIsInR5cCI6IkpXVCJ9.eyJjYW5hbCI6eyJ0ZW5hbnQiOiJBVVRIX0lORk9fVEVOQU5UIiwidXNlciI6IkFVVEhJTkZPX1JFQURfT05MWV9VU0VSIn0sImlhdCI6MTY1Nzc2MTcxMn0.Pvg8NCC_ica4q23c9W2yAus2UfuUJqTEfR6_hZb5uRdIf5-OhdDyHZTpVn1CGcIbqUAM1YQ2ovQxtKVwC5f3eW6Y2xzJqRUnGOAVfowv66g9PfARgxSJV-oriZcbfYRrknUap81gP-jO2BHeT3UIHvmHqGcLEXFFEx86HJgRJF-TVJJgKTE6yc1HtSVHu5knM1fvt0iNAHmLGcLLhZ8pJeuZ2DdE_etJYLArJheHW7Y_jKY-j5xaeP7vvXMeTlk7Aw19yunPudY-PTLU0-h4xgjniAFN5E1QOlVPht9MUgg6q5IwrJwT3tS8HgTPZiM8uLk7jv0qLTs6ed3uKZy_Ww"'
 
-#    - name: ZAP Full Scan2
+    - name: ZAP Full Scan2
 #      uses: zaproxy/action-full-scan@v0.4.0
-#      with:
-#        docker_name: 'owasp/zap2docker-stable'
-#        target: 'https://api.nonfunctionaltest.can4l.com/ngsi-ld/v1/entities/?type=WaterLevel&q=refPointOfInterest==%22urn:ngsi-ld:Spot:id:02%22'
-#        cmd_options: '-z "-config api.key=eyJhbGciOiJSUzI1NiIsInR5cCI6IkpXVCJ9.eyJjYW5hbCI6eyJ0ZW5hbnQiOiJBVVRIX0lORk9fVEVOQU5UIiwidXNlciI6IkFVVEhJTkZPX1JFQURfT05MWV9VU0VSIn0sImlhdCI6MTY1Nzc2MTcxMn0.Pvg8NCC_ica4q23c9W2yAus2UfuUJqTEfR6_hZb5uRdIf5-OhdDyHZTpVn1CGcIbqUAM1YQ2ovQxtKVwC5f3eW6Y2xzJqRUnGOAVfowv66g9PfARgxSJV-oriZcbfYRrknUap81gP-jO2BHeT3UIHvmHqGcLEXFFEx86HJgRJF-TVJJgKTE6yc1HtSVHu5knM1fvt0iNAHmLGcLLhZ8pJeuZ2DdE_etJYLArJheHW7Y_jKY-j5xaeP7vvXMeTlk7Aw19yunPudY-PTLU0-h4xgjniAFN5E1QOlVPht9MUgg6q5IwrJwT3tS8HgTPZiM8uLk7jv0qLTs6ed3uKZy_Ww"'
+      uses: zaproxy/action-api-scan@v0.1.1
+      with:
+        docker_name: 'owasp/zap2docker-stable'
+        target: 'https://api.nonfunctionaltest.can4l.com/ngsi-ld/v1/entities/?type=WaterLevel&q=refPointOfInterest==%22urn:ngsi-ld:Spot:id:02%22'
+        cmd_options: '-z "-config api.key=eyJhbGciOiJSUzI1NiIsInR5cCI6IkpXVCJ9.eyJjYW5hbCI6eyJ0ZW5hbnQiOiJBVVRIX0lORk9fVEVOQU5UIiwidXNlciI6IkFVVEhJTkZPX1JFQURfT05MWV9VU0VSIn0sImlhdCI6MTY1Nzc2MTcxMn0.Pvg8NCC_ica4q23c9W2yAus2UfuUJqTEfR6_hZb5uRdIf5-OhdDyHZTpVn1CGcIbqUAM1YQ2ovQxtKVwC5f3eW6Y2xzJqRUnGOAVfowv66g9PfARgxSJV-oriZcbfYRrknUap81gP-jO2BHeT3UIHvmHqGcLEXFFEx86HJgRJF-TVJJgKTE6yc1HtSVHu5knM1fvt0iNAHmLGcLLhZ8pJeuZ2DdE_etJYLArJheHW7Y_jKY-j5xaeP7vvXMeTlk7Aw19yunPudY-PTLU0-h4xgjniAFN5E1QOlVPht9MUgg6q5IwrJwT3tS8HgTPZiM8uLk7jv0qLTs6ed3uKZy_Ww"'
 
-#    - name: ZAP Full Scan3
+    - name: ZAP Full Scan3
 #      uses: zaproxy/action-full-scan@v0.4.0
-#      with:
-#        docker_name: 'owasp/zap2docker-stable'
-#        target: 'https://api.nonfunctionaltest.can4l.com/ngsi-ld/v1/entities/urn:ngsi-ld:WaterLevel:2485-08-20T23:07:06.00Z/attrs/streamGauge'
-#        cmd_options: '-z "-config api.key=eyJhbGciOiJSUzI1NiIsInR5cCI6IkpXVCJ9.eyJjYW5hbCI6eyJ0ZW5hbnQiOiJBVVRIX0lORk9fVEVOQU5UIiwidXNlciI6IkFVVEhJTkZPX1JFQURfT05MWV9VU0VSIn0sImlhdCI6MTY1Nzc2MTcxMn0.Pvg8NCC_ica4q23c9W2yAus2UfuUJqTEfR6_hZb5uRdIf5-OhdDyHZTpVn1CGcIbqUAM1YQ2ovQxtKVwC5f3eW6Y2xzJqRUnGOAVfowv66g9PfARgxSJV-oriZcbfYRrknUap81gP-jO2BHeT3UIHvmHqGcLEXFFEx86HJgRJF-TVJJgKTE6yc1HtSVHu5knM1fvt0iNAHmLGcLLhZ8pJeuZ2DdE_etJYLArJheHW7Y_jKY-j5xaeP7vvXMeTlk7Aw19yunPudY-PTLU0-h4xgjniAFN5E1QOlVPht9MUgg6q5IwrJwT3tS8HgTPZiM8uLk7jv0qLTs6ed3uKZy_Ww"'
+      uses: zaproxy/action-api-scan@v0.1.1
+      with:
+        docker_name: 'owasp/zap2docker-stable'
+        target: 'https://api.nonfunctionaltest.can4l.com/ngsi-ld/v1/entities/urn:ngsi-ld:WaterLevel:2485-08-20T23:07:06.00Z/attrs/streamGauge'
+        cmd_options: '-z "-config api.key=eyJhbGciOiJSUzI1NiIsInR5cCI6IkpXVCJ9.eyJjYW5hbCI6eyJ0ZW5hbnQiOiJBVVRIX0lORk9fVEVOQU5UIiwidXNlciI6IkFVVEhJTkZPX1JFQURfT05MWV9VU0VSIn0sImlhdCI6MTY1Nzc2MTcxMn0.Pvg8NCC_ica4q23c9W2yAus2UfuUJqTEfR6_hZb5uRdIf5-OhdDyHZTpVn1CGcIbqUAM1YQ2ovQxtKVwC5f3eW6Y2xzJqRUnGOAVfowv66g9PfARgxSJV-oriZcbfYRrknUap81gP-jO2BHeT3UIHvmHqGcLEXFFEx86HJgRJF-TVJJgKTE6yc1HtSVHu5knM1fvt0iNAHmLGcLLhZ8pJeuZ2DdE_etJYLArJheHW7Y_jKY-j5xaeP7vvXMeTlk7Aw19yunPudY-PTLU0-h4xgjniAFN5E1QOlVPht9MUgg6q5IwrJwT3tS8HgTPZiM8uLk7jv0qLTs6ed3uKZy_Ww"'
