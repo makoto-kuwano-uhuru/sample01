@@ -1,0 +1,79 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<configuration>
+    <context>
+        <name>GET:/(type)</name>
+        <desc/>
+        <inscope>true</inscope>
+        <incregexes>https://api.nonfunctionaltest.can4l.com/ngsi-ld/v1/entities/\?type\=WeatherForecast.*</incregexes>
+        <tech>
+            <include>Db</include>
+            <include>Db.CouchDB</include>
+            <include>Db.Firebird</include>
+            <include>Db.HypersonicSQL</include>
+            <include>Db.IBM DB2</include>
+            <include>Db.Microsoft Access</include>
+            <include>Db.Microsoft SQL Server</include>
+            <include>Db.MongoDB</include>
+            <include>Db.MySQL</include>
+            <include>Db.Oracle</include>
+            <include>Db.PostgreSQL</include>
+            <include>Db.SAP MaxDB</include>
+            <include>Db.SQLite</include>
+            <include>Db.Sybase</include>
+            <include>Language</include>
+            <include>Language.ASP</include>
+            <include>Language.C</include>
+            <include>Language.JSP/Servlet</include>
+            <include>Language.Java</include>
+            <include>Language.Java.Spring</include>
+            <include>Language.JavaScript</include>
+            <include>Language.PHP</include>
+            <include>Language.Python</include>
+            <include>Language.Ruby</include>
+            <include>Language.XML</include>
+            <include>OS</include>
+            <include>OS.Linux</include>
+            <include>OS.MacOS</include>
+            <include>OS.Windows</include>
+            <include>SCM</include>
+            <include>SCM.Git</include>
+            <include>SCM.SVN</include>
+            <include>WS</include>
+            <include>WS.Apache</include>
+            <include>WS.IIS</include>
+            <include>WS.Tomcat</include>
+        </tech>
+        <urlparser>
+            <class>org.zaproxy.zap.model.StandardParameterParser</class>
+            <config>{"kvps":"&amp;","kvs":"=","struct":[]}</config>
+        </urlparser>
+        <postparser>
+            <class>org.zaproxy.zap.model.StandardParameterParser</class>
+            <config>{"kvps":"&amp;","kvs":"=","struct":[]}</config>
+        </postparser>
+        <authentication>
+            <type>0</type>
+            <strategy>EACH_RESP</strategy>
+            <pollurl/>
+            <polldata/>
+            <pollheaders/>
+            <pollfreq>60</pollfreq>
+            <pollunits>REQUESTS</pollunits>
+            <loggedin>api-key</loggedin>
+            <loggedout>eyJhbGciOiJSUzI1NiIsInR5cCI6IkpXVCJ9.eyJjYW5hbCI6eyJ0ZW5hbnQiOiJBVVRIX0lORk9fVEVOQU5UIiwidXNlciI6IkFVVEhJTkZPX1JFQURfT05MWV9VU0VSIn0sImlhdCI6MTY1Nzc2MTcxMn0.Pvg8NCC_ica4q23c9W2yAus2UfuUJqTEfR6_hZb5uRdIf5-OhdDyHZTpVn1CGcIbqUAM1YQ2ovQxtKVwC5f3eW6Y2xzJqRUnGOAVfowv66g9PfARgxSJV-oriZcbfYRrknUap81gP-jO2BHeT3UIHvmHqGcLEXFFEx86HJgRJF-TVJJgKTE6yc1HtSVHu5knM1fvt0iNAHmLGcLLhZ8pJeuZ2DdE_etJYLArJheHW7Y_jKY-j5xaeP7vvXMeTlk7Aw19yunPudY-PTLU0-h4xgjniAFN5E1QOlVPht9MUgg6q5IwrJwT3tS8HgTPZiM8uLk7jv0qLTs6ed3uKZy_Ww</loggedout>
+        </authentication>
+        <forceduser>-1</forceduser>
+        <session>
+            <type>0</type>
+        </session>
+        <authorization>
+            <type>0</type>
+            <basic>
+                <header/>
+                <body/>
+                <logic>AND</logic>
+                <code>-1</code>
+            </basic>
+        </authorization>
+    </context>
+</configuration>
