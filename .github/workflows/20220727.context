@@ -60,7 +60,7 @@
             <pollfreq>60</pollfreq>
             <pollunits>REQUESTS</pollunits>
             <loggedin>api-key</loggedin>
-            <loggedout>eyJhbGciOiJSUzI1NiIsInR5cCI6IkpXVCJ9.eyJjYW5hbCI6eyJ0ZW5hbnQiOiJBVVRIX0lORk9fVEVOQU5UIiwidXNlciI6IkFVVEhJTkZPX1JFQURfT05MWV9VU0VSIn0sImlhdCI6MTY1Nzc2MTcxMn0.Pvg8NCC_ica4q23c9W2yAus2UfuUJqTEfR6_hZb5uRdIf5-OhdDyHZTpVn1CGcIbqUAM1YQ2ovQxtKVwC5f3eW6Y2xzJqRUnGOAVfowv66g9PfARgxSJV-oriZcbfYRrknUap81gP-jO2BHeT3UIHvmHqGcLEXFFEx86HJgRJF-TVJJgKTE6yc1HtSVHu5knM1fvt0iNAHmLGcLLhZ8pJeuZ2DdE_etJYLArJheHW7Y_jKY-j5xaeP7vvXMeTlk7Aw19yunPudY-PTLU0-h4xgjniAFN5E1QOlVPht9MUgg6q5IwrJwT3tS8HgTPZiM8uLk7jv0qLTs6ed3uKZy_Ww</loggedout>
+            <loggedout>eyJhbGciOiJSUzI1NiIsInR5cCI6IkpXVCJ9.eyJzdWIiOiJodHRwczovL2FwaS5ub25mdW5jdGlvbmFsdGVzdC5jYW40bC5jb20iLCJqdGkiOiIwMUc5MjQwS0Y4N0ZFWUJFSkpUMlIxTVpOUiIsImV4cCI6MTY2MTk5MDQwMCwiY2FuYWwiOnsidGVuYW50IjoiMDFHNEE0MVZRUFRBS0FXRV9UTlRfR0FNTUEiLCJ1c2VyIjoiMDFHOTIzQUczNjYyN1pRUzI3QUg0NlJYOVIifSwiaWF0IjoxNjU5MDAyNTQwfQ.d1iW6PxsqOUoWv0Cf4kcwl2EJNsLQSAFFMH-RlNkKwgwEonzTczJajExwwTo7HXjO3PYrjn9TPaTxHsblx_oWXpa4HYbw_t2Sm0L2N-U2by51AnlXy04IeL2XcB9dL_YKKwnWHkTcsvxO5OQKam4F1PqmLOK8cSRLwDb0wgrazsEyzOMC3nW8tokDRQK8fLx0pLsRDjAvmkTrpWELAD4UwDa7Rx4Xcq0AthDrg0Wp8olh7Ldmpbvae5uJA0_Az6P1uLAHsTy696XPL_GK-EkNjggYazO7CeM5LNt3udqlRh9yzU-Uv4Foo_7vTcMdotAmwhO5xiAnflCAuDD0VMqEQ</loggedout>
         </authentication>
         <forceduser>-1</forceduser>
         <session>
