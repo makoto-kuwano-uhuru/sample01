@@ -59,6 +59,8 @@
             <pollheaders/>
             <pollfreq>60</pollfreq>
             <pollunits>REQUESTS</pollunits>
+            <loggedin>Content-Type</loggedin>
+            <loggedout>application/json</loggedout>
             <loggedin>api-key</loggedin>
             <loggedout>eyJhbGciOiJSUzI1NiIsInR5cCI6IkpXVCJ9.eyJzdWIiOiJodHRwczovL2FwaS5ub25mdW5jdGlvbmFsdGVzdC5jYW40bC5jb20iLCJqdGkiOiIwMUc5MjQwS0Y4N0ZFWUJFSkpUMlIxTVpOUiIsImV4cCI6MTY2MTk5MDQwMCwiY2FuYWwiOnsidGVuYW50IjoiMDFHNEE0MVZRUFRBS0FXRV9UTlRfR0FNTUEiLCJ1c2VyIjoiMDFHOTIzQUczNjYyN1pRUzI3QUg0NlJYOVIifSwiaWF0IjoxNjU5MDAyNTQwfQ.d1iW6PxsqOUoWv0Cf4kcwl2EJNsLQSAFFMH-RlNkKwgwEonzTczJajExwwTo7HXjO3PYrjn9TPaTxHsblx_oWXpa4HYbw_t2Sm0L2N-U2by51AnlXy04IeL2XcB9dL_YKKwnWHkTcsvxO5OQKam4F1PqmLOK8cSRLwDb0wgrazsEyzOMC3nW8tokDRQK8fLx0pLsRDjAvmkTrpWELAD4UwDa7Rx4Xcq0AthDrg0Wp8olh7Ldmpbvae5uJA0_Az6P1uLAHsTy696XPL_GK-EkNjggYazO7CeM5LNt3udqlRh9yzU-Uv4Foo_7vTcMdotAmwhO5xiAnflCAuDD0VMqEQ</loggedout>
         </authentication>
