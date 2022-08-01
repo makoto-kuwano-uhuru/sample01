@@ -34,7 +34,7 @@ jobs:
       with:
         docker_name: 'owasp/zap2docker-stable'
         target: 'https://api.nonfunctionaltest.can4l.com/graphql'
-        cmd_options: '-a -d -n 20220727.context'
+        cmd_options: '-a -d -n set-apilist.context'
          
 
 #    - name: ZAP Full Scan1
