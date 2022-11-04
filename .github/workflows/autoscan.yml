@@ -45,13 +45,13 @@ jobs:
 #        target: 'https://api.nonfunctionaltest.can4l.com/ngsi-ld/v1/entityOperations/create'
 #        cmd_options: '-a -d -n 20220727.context'
         
-#    - name: ZAP Full Scan2
-#      uses: zaproxy/action-full-scan@v0.4.0
-#      uses: zaproxy/action-api-scan@v0.1.1
-#      with:
-#        docker_name: 'owasp/zap2docker-stable'
-#        target: 'https://api.nonfunctionaltest.can4l.com/ngsi-ld/v1/entities/?type=WaterLevel&q=refPointOfInterest==%22urn:ngsi-ld:Spot:id:02%22'
-#        cmd_options: '-a -d -n 20220727.context'
+    - name: ZAP Full Scan2
+      uses: zaproxy/action-full-scan@v0.4.0
+      uses: zaproxy/action-api-scan@v0.1.1
+      with:
+        docker_name: 'owasp/zap2docker-stable'
+        target: 'https://api.nonfunctionaltest.can4l.com/ngsi-ld/v1/entities/?type=WaterLevel&q=refPointOfInterest==%22urn:ngsi-ld:Spot:id:02%22'
+        cmd_options: '-a -d -n 20220727.context'
         
 #    - name: ZAP Full Scan3
 #      uses: zaproxy/action-full-scan@v0.4.0
