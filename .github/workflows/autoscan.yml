@@ -51,7 +51,7 @@ jobs:
       with:
         docker_name: 'owasp/zap2docker-stable'
         target: 'https://api.nonfunctionaltest.can4l.com/ngsi-ld/v1/entities/?type=WaterLevel&q=refPointOfInterest==%22urn:ngsi-ld:Spot:id:02%22'
-        cmd_options: '-a -d - -n 20220727.context'
+        cmd_options: '-a -d -i -n 20220727.context'
         
 #    - name: ZAP Full Scan3
 #      uses: zaproxy/action-full-scan@v0.4.0
