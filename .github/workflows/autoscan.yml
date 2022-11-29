@@ -51,7 +51,7 @@ jobs:
       with:
         docker_name: 'owasp/zap2docker-stable'
         target: 'https://api.nonfunctionaltest.can4l.com/ngsi-ld/v1/entities/?type=WeatherForecast+OR+1%3D1+--+'
-        cmd_options: '-a -d -n set-apilist.context -c zap.yaml'
+        cmd_options: '-a -d -n set-apilist.context'
         
 #    - name: ZAP Full Scan3
 #      uses: zaproxy/action-full-scan@v0.4.0
