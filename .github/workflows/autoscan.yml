@@ -33,8 +33,8 @@ jobs:
 #     uses: zaproxy/action-api-scan@v0.1.1
       with:
         docker_name: 'owasp/zap2docker-stable'
-        target: 'https://api.nonfunctionaltest.can4l.com/graphql'
-        cmd_options: '-a -d -n set-apilist.context'
+        target: 'https://api.nonfunctionaltest.can4l.com/ngsi-ld/v1/entities/'
+        cmd_options: '-a -d -n set-apilist.context -c zap.yaml'
          
 
 #    - name: ZAP Full Scan1
@@ -51,7 +51,7 @@ jobs:
       with:
         docker_name: 'owasp/zap2docker-stable'
         target: 'https://api.nonfunctionaltest.can4l.com/ngsi-ld/v1/entities/?type=WeatherForecast+OR+1%3D1+--+'
-        cmd_options: '-a -d -i -n 20221101.context'
+        cmd_options: '-a -d -n set-apilist.context -c zap.yaml'
         
 #    - name: ZAP Full Scan3
 #      uses: zaproxy/action-full-scan@v0.4.0
